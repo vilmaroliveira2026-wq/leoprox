@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0B0E14">
+ <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp">
+  <EditText android:id="@+id/urlBox" android:layout_width="0dp" android:layout_weight="1" android:layout_height="46dp" android:background="@drawable/pill_bg" android:paddingLeft="16dp" android:paddingRight="12dp" android:textColor="#FFFFFF" android:textColorHint="#8A94A6" android:hint="Buscar ou digitar site" android:inputType="textUri" android:imeOptions="actionGo" android:singleLine="true" android:textSize="15sp"/>
+  <Button android:id="@+id/goBtn" android:layout_width="wrap_content" android:layout_height="46dp" android:text="Ir" android:textColor="#FFFFFF" android:background="#0B0E14"/>
+ </LinearLayout>
+ <ProgressBar android:id="@+id/progressBar" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="3dp" android:max="100" android:progress="0"/>
+ <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#9AA4B2" android:textSize="12sp" android:paddingLeft="12dp" android:paddingRight="12dp" android:text="LeoProx"/>
+ <FrameLayout android:id="@+id/webContainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+ <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#12161F">
+  <Button android:id="@+id/backBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="◀" android:textSize="16sp" android:textColor="#FFFFFF" android:background="#12161F"/>
+  <Button android:id="@+id/fwdBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="▶" android:textSize="16sp" android:textColor="#FFFFFF" android:background="#12161F"/>
+  <Button android:id="@+id/reloadBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="⟳" android:textSize="18sp" android:textColor="#FFFFFF" android:background="#12161F"/>
+  <Button android:id="@+id/starBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="☆" android:textSize="18sp" android:textColor="#FFC24B" android:background="#12161F"/>
+  <Button android:id="@+id/tabsBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="▢ 1" android:textSize="15sp" android:textColor="#FFFFFF" android:background="#12161F"/>
+  <Button android:id="@+id/menuBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="☰" android:textSize="18sp" android:textColor="#FFFFFF" android:background="#12161F"/>
+ </LinearLayout>
+ <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#171C28">
+  <Button android:id="@+id/homeBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="52dp" android:text="Inicio" android:textColor="#FFFFFF" android:background="#171C28"/>
+  <Button android:id="@+id/favBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="52dp" android:text="Favoritos" android:textColor="#FFFFFF" android:background="#171C28"/>
+  <Button android:id="@+id/histBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="52dp" android:text="Historico" android:textColor="#FFFFFF" android:background="#171C28"/>
+  <Button android:id="@+id/ipBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="52dp" android:text="Meu IP" android:textColor="#4DA3FF" android:background="#171C28"/>
+  <Button android:id="@+id/proxyBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="52dp" android:text="Proxy" android:textColor="#FF4A3D" android:background="#171C28"/>
+ </LinearLayout>
+</LinearLayout>
