@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Proxy Manual (a sua)" android:textSize="18sp" android:textStyle="bold"/>
+ <EditText android:id="@+id/hostBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Host / IP - ex: 185.123.45.67"/>
+ <EditText android:id="@+id/portBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Porta - ex: 8080" android:inputType="number"/>
+ <EditText android:id="@+id/userBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Usuário (opcional)"/>
+ <EditText android:id="@+id/passBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Senha (opcional)" android:inputType="textPassword"/>
+ <Button android:id="@+id/testBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Testar Proxy (antes de aplicar)"/>
+ <Button android:id="@+id/applyBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Aplicar Proxy"/>
+ <Button android:id="@+id/offBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Desligar Proxy"/>
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Grátis por País (ProxyScrape)" android:textSize="18sp" android:textStyle="bold" android:layout_marginTop="24dp"/>
+ <Spinner android:id="@+id/countrySpinner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <Button android:id="@+id/fetchBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Buscar Proxies Grátis"/>
+ <TextView android:id="@+id/proxyMsg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+ <ListView android:id="@+id/proxyList" android:layout_width="match_parent" android:layout_height="400dp"/>
+</LinearLayout></ScrollView>
